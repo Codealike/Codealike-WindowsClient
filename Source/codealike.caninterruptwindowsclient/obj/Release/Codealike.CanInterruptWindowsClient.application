@@ -11,17 +11,17 @@
     <deploymentProvider codebase="http://www.codealike.com/Codealike.CanInterruptWindowsClient.application" />
   </deployment>
   <compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">
-    <framework targetVersion="4.5" profile="Full" supportedRuntime="4.0.30319" />
+    <framework targetVersion="4.6.1" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="Codealike.CanInterruptWindowsClient.exe.manifest" size="6808">
+    <dependentAssembly dependencyType="install" codebase="Codealike.CanInterruptWindowsClient.exe.manifest" size="10899">
       <assemblyIdentity name="Codealike.CanInterruptWindowsClient.exe" version="1.0.0.2" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Ir7GgmeLmm7n3yC3i4xjgHH79RHoi06zFnkk1Kjch7Y=</dsig:DigestValue>
+        <dsig:DigestValue>tQLa9R3Waod/epVrCSlDvi4cN60R24mpHbYUB3ZXP/s=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

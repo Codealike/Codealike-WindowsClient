@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Codealike.CanInterruptWindowsClient.exe" size="115160">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Codealike.CanInterruptWindowsClient.exe" size="115672">
       <assemblyIdentity name="Codealike.CanInterruptWindowsClient" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>WbE9i9hFEBXaPEaxDcZA8Xp7JuO0OjHKOW1HrcS1kP8=</dsig:DigestValue>
+        <dsig:DigestValue>KRqXB39wuK8TH63Nj5SZWEpnjMTeaiqo1pcGsd57XW4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

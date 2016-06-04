@@ -23,7 +23,6 @@ E:\Dropbox\CodeAlike\CanFocus\Code\CanFocus PoC\Codealike.CanInterruptWindowsCli
 C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\bin\Release\Codealike.CanInterruptWindowsClient.exe.config
 C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\obj\Release\Codealike.CanInterruptWindowsClient.exe
 C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\obj\Release\Codealike.CanInterruptWindowsClient.pdb
-C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\obj\Release\Codealike.CanInterruptWindowsClient.csprojResolveAssemblyReference.cache
 C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\obj\Release\Codealike.CanInterruptWindowsClient.ContextMenuMain.resources
 C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\obj\Release\Codealike.CanInterruptWindowsClient.Properties.Resources.resources
 C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\obj\Release\Codealike.CanInterruptWindowsClient.Settings.resources
@@ -39,3 +38,14 @@ C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\bin\R
 C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\bin\Release\System.Net.Http.Formatting.xml
 C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\obj\Release\Codealike.CanInterruptWindowsClient.exe.manifest
 C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\obj\Release\Codealike.CanInterruptWindowsClient.application
+C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\bin\Release\HidLibrary.dll
+C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\bin\Release\Sleddog.Blink1.dll
+C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\bin\Release\System.Reactive.Core.dll
+C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\bin\Release\System.Reactive.Interfaces.dll
+C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\bin\Release\System.Reactive.Linq.dll
+C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\bin\Release\System.Reactive.PlatformServices.dll
+C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\bin\Release\HidLibrary.pdb
+C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\bin\Release\System.Reactive.Core.xml
+C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\bin\Release\System.Reactive.Interfaces.xml
+C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\bin\Release\System.Reactive.Linq.xml
+C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\bin\Release\System.Reactive.PlatformServices.xml

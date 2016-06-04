@@ -30,12 +30,12 @@ namespace Codealike.CanInterruptWindowsClient
 
             // Set Matching rules.
             MatchingRules_HARD.Add("no-connection", Blink1DeviceStatus.NoConnection);
-            MatchingRules_HARD.Add("grey", Blink1DeviceStatus.Off);
+            MatchingRules_HARD.Add("grey", Blink1DeviceStatus.NoActivity);
             MatchingRules_HARD.Add("green", Blink1DeviceStatus.Red);
             MatchingRules_HARD.Add("red", Blink1DeviceStatus.Red);
 
             MatchingRules_SOFT.Add("no-connection", Blink1DeviceStatus.NoConnection);
-            MatchingRules_SOFT.Add("grey", Blink1DeviceStatus.Off);
+            MatchingRules_SOFT.Add("grey", Blink1DeviceStatus.NoActivity);
             MatchingRules_SOFT.Add("green", Blink1DeviceStatus.Green);
             MatchingRules_SOFT.Add("red", Blink1DeviceStatus.Red);
 
@@ -52,8 +52,9 @@ namespace Codealike.CanInterruptWindowsClient
         {
             Green,
             Red,
-            Off,
-            NoConnection
+            NoActivity,
+            NoConnection,
+            TurnOff
         }
 
         public static string GetAPIRoot()
@@ -95,7 +96,7 @@ namespace Codealike.CanInterruptWindowsClient
         }
         static void OnProcessExit(object sender, EventArgs e)
         {
-            ChangeBlink1DeviceStatus(Blink1DeviceStatus.Off);
+            ChangeBlink1DeviceStatus(Blink1DeviceStatus.TurnOff);
         }
 
         public static void ChangeBlink1DeviceStatus(Blink1DeviceStatus newStatus)
@@ -112,17 +113,20 @@ namespace Codealike.CanInterruptWindowsClient
 
                     switch (newStatus)
                     {
-                        case Program.Blink1DeviceStatus.Green:
+                        case Blink1DeviceStatus.Green:
                             blink1.Set(Color.Green);
                             break;
-                        case Program.Blink1DeviceStatus.Red:
+                        case Blink1DeviceStatus.Red:
                             blink1.Set(Color.Red);
                             break;
-                        case Program.Blink1DeviceStatus.Off:
+                        case Blink1DeviceStatus.NoActivity:
+                            blink1.Show(Color.Orange, new TimeSpan(0, 0, 5));
+                            break;
+                        case Blink1DeviceStatus.NoConnection:
                             blink1.Blink(Color.White, new TimeSpan(0, 0, 1), 5);
                             break;
-                        case Program.Blink1DeviceStatus.NoConnection:
-                            blink1.Blink(Color.White, new TimeSpan(0, 0, 1), 5);
+                        case Blink1DeviceStatus.TurnOff:
+                            blink1.TurnOff();
                             break;
                         default:
                             blink1.TurnOff();
