@@ -17,3 +17,33 @@ W:\Code\Codealike\CanFocus PoC\Codealike.CanInterruptWindowsClient\Codealike.Can
 W:\Code\Codealike\CanFocus PoC\Codealike.CanInterruptWindowsClient\Codealike.CanInterruptWindowsClient\obj\Debug\Codealike.CanInterruptWindowsClient.exe
 W:\Code\Codealike\CanFocus PoC\Codealike.CanInterruptWindowsClient\Codealike.CanInterruptWindowsClient\obj\Debug\Codealike.CanInterruptWindowsClient.pdb
 W:\Code\Codealike\CanFocus PoC\Codealike.CanInterruptWindowsClient\Codealike.CanInterruptWindowsClient\obj\Debug\Codealike.CanInterruptWindowsClient.csprojResolveAssemblyReference.cache
+C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\bin\Debug\Codealike.CanInterruptWindowsClient.exe.config
+C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\obj\Debug\Codealike.CanInterruptWindowsClient.exe
+C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\obj\Debug\Codealike.CanInterruptWindowsClient.pdb
+C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\bin\Debug\Codealike.CanInterruptWindowsClient.exe.manifest
+C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\bin\Debug\Codealike.CanInterruptWindowsClient.application
+C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\bin\Debug\Codealike.CanInterruptWindowsClient.exe
+C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\bin\Debug\Codealike.CanInterruptWindowsClient.pdb
+C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\bin\Debug\Newtonsoft.Json.dll
+C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\bin\Debug\System.Net.Http.Formatting.dll
+C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\bin\Debug\Newtonsoft.Json.xml
+C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\bin\Debug\System.Net.Http.Formatting.xml
+C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\obj\Debug\Codealike.CanInterruptWindowsClient.csprojResolveAssemblyReference.cache
+C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\obj\Debug\Codealike.CanInterruptWindowsClient.ContextMenuMain.resources
+C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\obj\Debug\Codealike.CanInterruptWindowsClient.Properties.Resources.resources
+C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\obj\Debug\Codealike.CanInterruptWindowsClient.Settings.resources
+C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\obj\Debug\Codealike.CanInterruptWindowsClient.csproj.GenerateResource.Cache
+C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\obj\Debug\Codealike.CanInterruptWindowsClient.TrustInfo.xml
+C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\obj\Debug\Codealike.CanInterruptWindowsClient.exe.manifest
+C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\obj\Debug\Codealike.CanInterruptWindowsClient.application
+C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\bin\Debug\HidLibrary.dll
+C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\bin\Debug\Sleddog.Blink1.dll
+C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\bin\Debug\System.Reactive.Core.dll
+C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\bin\Debug\System.Reactive.Interfaces.dll
+C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\bin\Debug\HidLibrary.pdb
+C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\bin\Debug\System.Reactive.Core.xml
+C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\bin\Debug\System.Reactive.Interfaces.xml
+C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\bin\Debug\System.Reactive.Linq.dll
+C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\bin\Debug\System.Reactive.PlatformServices.dll
+C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\bin\Debug\System.Reactive.Linq.xml
+C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\bin\Debug\System.Reactive.PlatformServices.xml

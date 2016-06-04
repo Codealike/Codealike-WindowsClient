@@ -11,11 +11,11 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Windows.Forms;
-using System.Web.Helpers;
 using Newtonsoft.Json;
 using System.Threading;
 using System.Timers;
 using Microsoft.Win32;
+using Sleddog.Blink1;
 
 namespace Codealike.CanInterruptWindowsClient
 {
@@ -70,7 +70,7 @@ namespace Codealike.CanInterruptWindowsClient
                     var value = currentCodealikeStatus.Message + " (" + Program.Username + " - " + DateTime.Now.ToString("hh:mm:ss") + ")";
                     value = value.Substring(0, value.Length < 63 ? value.Length : 63);
                     notifyIcon1.Text = value;
-                    ChangeCanFocusDeviceStatus(currentCodealikeStatus.Status);
+                    ChangeBlink1DeviceStatus(currentCodealikeStatus.Status);
                 }
             }
             catch (Exception ex)
@@ -184,55 +184,16 @@ namespace Codealike.CanInterruptWindowsClient
             UpdateStatus();
         }
 
-        private bool ChangeCanFocusDeviceStatus(string codealikeStatus)
+        private void ChangeBlink1DeviceStatus(string codealikeStatus)
         {
-            Program.CanFocusDeviceStatus canFocusNewStatus;
+            Program.Blink1DeviceStatus blink1NewStatus;
 
-            if (Program.MatchingRules.TryGetValue(codealikeStatus, out canFocusNewStatus))
+            if (Program.MatchingRules.TryGetValue(codealikeStatus, out blink1NewStatus))
             {
-                return ChangeCanFocusDeviceStatus(canFocusNewStatus);
-            }
-            else
-            {
-                return false;
+                Program.ChangeBlink1DeviceStatus(blink1NewStatus);
             }
         }
-        private bool ChangeCanFocusDeviceStatus(Program.CanFocusDeviceStatus newStatus)
-        {
-            try
-            {
-                var APP_DATA = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
-                var CAN_FOCUS_FOLDER = APP_DATA + "\\CanFocus\\";
 
-                if (System.IO.Directory.Exists(CAN_FOCUS_FOLDER))
-                {
-                    System.IO.File.Delete(CAN_FOCUS_FOLDER + ".bfocused.ttm");
-                    System.IO.File.Delete(CAN_FOCUS_FOLDER + ".bfocused.dnd");
-
-                    switch (newStatus)
-                    {
-                        case Program.CanFocusDeviceStatus.Green:
-                            System.IO.File.Create(CAN_FOCUS_FOLDER + ".bfocused.ttm").Dispose();
-                            break;
-                        case Program.CanFocusDeviceStatus.Red:
-                            System.IO.File.Create(CAN_FOCUS_FOLDER + ".bfocused.dnd").Dispose();
-                            break;
-                        default:
-                            break;
-                    }
-
-                    return true;
-                }
-                else
-                {
-                    return false;
-                }
-            }
-            catch (Exception ex)
-            {
-                return false;
-            }
-        }
 
         private void notifyIcon1_MouseClick(object sender, MouseEventArgs e)
         {

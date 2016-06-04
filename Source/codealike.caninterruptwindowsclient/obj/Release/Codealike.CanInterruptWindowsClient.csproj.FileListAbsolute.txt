@@ -20,3 +20,22 @@ W:\Code\Codealike\CanFocus PoC\Codealike.CanInterruptWindowsClient\Codealike.Can
 E:\Dropbox\CodeAlike\CanFocus\Code\CanFocus PoC\Codealike.CanInterruptWindowsClient\Codealike.CanInterruptWindowsClient\bin\Release\Codealike.CanInterruptWindowsClient.exe.config
 E:\Dropbox\CodeAlike\CanFocus\Code\CanFocus PoC\Codealike.CanInterruptWindowsClient\Codealike.CanInterruptWindowsClient\obj\Release\Codealike.CanInterruptWindowsClient.exe
 E:\Dropbox\CodeAlike\CanFocus\Code\CanFocus PoC\Codealike.CanInterruptWindowsClient\Codealike.CanInterruptWindowsClient\obj\Release\Codealike.CanInterruptWindowsClient.pdb
+C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\bin\Release\Codealike.CanInterruptWindowsClient.exe.config
+C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\obj\Release\Codealike.CanInterruptWindowsClient.exe
+C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\obj\Release\Codealike.CanInterruptWindowsClient.pdb
+C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\obj\Release\Codealike.CanInterruptWindowsClient.csprojResolveAssemblyReference.cache
+C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\obj\Release\Codealike.CanInterruptWindowsClient.ContextMenuMain.resources
+C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\obj\Release\Codealike.CanInterruptWindowsClient.Properties.Resources.resources
+C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\obj\Release\Codealike.CanInterruptWindowsClient.Settings.resources
+C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\obj\Release\Codealike.CanInterruptWindowsClient.csproj.GenerateResource.Cache
+C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\obj\Release\Codealike.CanInterruptWindowsClient.TrustInfo.xml
+C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\bin\Release\Codealike.CanInterruptWindowsClient.exe.manifest
+C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\bin\Release\Codealike.CanInterruptWindowsClient.application
+C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\bin\Release\Codealike.CanInterruptWindowsClient.exe
+C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\bin\Release\Codealike.CanInterruptWindowsClient.pdb
+C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\bin\Release\Newtonsoft.Json.dll
+C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\bin\Release\System.Net.Http.Formatting.dll
+C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\bin\Release\Newtonsoft.Json.xml
+C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\bin\Release\System.Net.Http.Formatting.xml
+C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\obj\Release\Codealike.CanInterruptWindowsClient.exe.manifest
+C:\Code\Codealike-WindowsClient\Source\Codealike.CanInterruptWindowsClient\obj\Release\Codealike.CanInterruptWindowsClient.application
