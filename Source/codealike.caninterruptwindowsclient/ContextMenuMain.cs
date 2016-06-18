@@ -37,15 +37,7 @@ namespace Codealike.CanInterruptWindowsClient
 
             frmSettings.Save += new SaveEventHandler(Settings_Save);
 
-            if (regValue == null)
-            {
-                frmSettings.Show();
-            }
-            else
-            {
-                Program.Username = regValue.ToString();
-                UpdateStatus();
-            }
+            frmSettings.Show();
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
@@ -57,25 +49,30 @@ namespace Codealike.CanInterruptWindowsClient
         {
             try
             {
-                var currentCodealikeStatus = checkStatus(Program.Username);
-
-                notifyIcon1.Icon = new Icon(GetType(), currentCodealikeStatus.Status + ".ico");
-
-                if (Program.Username == string.Empty)
+                foreach (var rule in Program.Rules)
                 {
-                    notifyIcon1.Text = "You should provide an Username - " + DateTime.Now.ToString("hh:mm:ss");
+                    var username = rule.Value.Username;
+                    var currentCodealikeStatus = checkStatus(username);
+
+                    notifyIcon1.Icon = new Icon(GetType(), currentCodealikeStatus.Status + ".ico");
+
+                    if (username == string.Empty)
+                    {
+                        notifyIcon1.Text = "You should provide an Username - " + DateTime.Now.ToString("hh:mm:ss");
+                    }
+                    else
+                    {
+                        var value = currentCodealikeStatus.Message + " (" + username + " - " + DateTime.Now.ToString("hh:mm:ss") + ")";
+                        value = value.Substring(0, value.Length < 63 ? value.Length : 63);
+                        notifyIcon1.Text = value;
+                        ChangeBlink1DeviceStatus(rule.Key, currentCodealikeStatus.Status);
+                    }
                 }
-                else
-                {
-                    var value = currentCodealikeStatus.Message + " (" + Program.Username + " - " + DateTime.Now.ToString("hh:mm:ss") + ")";
-                    value = value.Substring(0, value.Length < 63 ? value.Length : 63);
-                    notifyIcon1.Text = value;
-                    ChangeBlink1DeviceStatus(currentCodealikeStatus.Status);
-                }
+
             }
             catch (Exception ex)
             {
-                throw;
+                throw ex;
             }
         }
 
@@ -174,6 +171,7 @@ namespace Codealike.CanInterruptWindowsClient
         {
             this.timer1.Stop();
         }
+
         public void StartTimer()
         {
             this.timer1.Start();
@@ -184,16 +182,16 @@ namespace Codealike.CanInterruptWindowsClient
             UpdateStatus();
         }
 
-        private void ChangeBlink1DeviceStatus(string codealikeStatus)
+        private void ChangeBlink1DeviceStatus(string serial, string codealikeStatus)
         {
             Program.Blink1DeviceStatus blink1NewStatus;
+            var rules = Program.GetMatchingRules(serial);
 
-            if (Program.MatchingRules.TryGetValue(codealikeStatus, out blink1NewStatus))
+            if (rules.TryGetValue(codealikeStatus, out blink1NewStatus))
             {
-                Program.ChangeBlink1DeviceStatus(blink1NewStatus);
+                Program.ChangeBlink1DeviceStatus(serial, blink1NewStatus);
             }
         }
-
 
         private void notifyIcon1_MouseClick(object sender, MouseEventArgs e)
         {
