@@ -235,7 +235,7 @@ namespace Codealike.CanInterruptWindowsClient
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.CancelButton = this.lnkCancel;
-            this.ClientSize = new System.Drawing.Size(1700, 1221);
+            this.ClientSize = new System.Drawing.Size(1700, 1059);
             this.Controls.Add(this.lblMessage);
             this.Controls.Add(this.btnIdentify);
             this.Controls.Add(this.lstDevices);

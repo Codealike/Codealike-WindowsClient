@@ -67,6 +67,8 @@ namespace Codealike.CanInterruptWindowsClient
 
             Save?.Invoke(this, new SaveEventArgs() { NewDevice = deviceSerialNumber });
 
+            RefreshListView();
+
             lblMessage.Text = "New device settings saved";
             lblMessage.ForeColor = Color.LightSeaGreen;
         }
@@ -75,17 +77,30 @@ namespace Codealike.CanInterruptWindowsClient
         {
             this.AcceptButton = btnSave;
 
-            lstDevices.Columns.Add("Device");
-            lstDevices.Columns.Add("Version");
-            lstDevices.Columns.Add("User");
-            lstDevices.Columns.Add("Last Update");
+            RefreshListView();          
+        }
+
+        private void RefreshListView()
+        {
+            lstDevices.Columns.Clear();
+            lstDevices.Columns.Add("Device", 120);
+            lstDevices.Columns.Add("User", 150);
 
             var devices = Program.GetBlinkDevices();
 
+            lstDevices.Items.Clear();
+
             foreach (var device in devices)
             {
-                lstDevices.Items.Add(new ListViewItem(new string[] { device.SerialNumber, device.Version.ToString(), string.Empty, string.Empty }));
-            }            
+                StoredDevice storedDevice;
+
+                string[] values = new string[] { device.SerialNumber, string.Empty };
+
+                if (Program.Rules.TryGetValue(device.SerialNumber, out storedDevice))
+                    values = new string[] { device.SerialNumber, storedDevice.Username };
+
+                lstDevices.Items.Add(new ListViewItem(values));
+            }
         }
 
         private void label3_Click(object sender, EventArgs e)
